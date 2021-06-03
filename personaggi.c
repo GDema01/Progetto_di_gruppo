@@ -7,25 +7,6 @@
 #include "luoghi.h"
 #include "personaggi.h"
 
-personaggio *get_personaggio(int pers_id)
-{
-  int i = 0;
-  personaggio *pers = NULL;
-  int trovato = false;
-  while(i < NUM_PERSONAGGI && trovato == false)
-  {
-    if(pers_id == personaggi[i].id)
-    {
-      pers = &personaggi[i];
-      trovato = true;
-    }
-    i++;
-  }
-
-  return pers;
-}
-
-
 void stampa_personaggi_stanza(int luog_id)
 {
   int i = 0;

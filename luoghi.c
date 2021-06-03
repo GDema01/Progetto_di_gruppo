@@ -10,23 +10,6 @@
 
 int pos_giocatore = 0;
 
-luogo *get_luogo(int luog_id)
-{
-  luogo *luog = NULL;
-  int i = 0;
-  bool trovato = false;
-  while (i < NUM_LUOGHI && trovato == false)
-  {
-    if (luog_id == luoghi[i].id)
-    {
-      luog = &luoghi[i];
-      trovato = true;
-    }
-    i++;
-  }
-  return luog;
-}
-
 
 void esegui_ispeziona(int ogg_id)
 {

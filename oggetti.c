@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -188,24 +187,6 @@ int usa(int ogg_id)
   }
   
   return codice_caso;
-}
-
-
-oggetto *get_oggetto(int ogg_id)
-{
-  oggetto *ogg = NULL;
-  int i = 0;
-  bool trovato = false;
-  while (i < NUM_OGGETTI && trovato == false)
-  {
-    if (ogg_id == oggetti[i].id)
-    {
-      ogg = &oggetti[i];
-      trovato = true;
-    }
-    i++;
-  }
-  return ogg;
 }
 
 
